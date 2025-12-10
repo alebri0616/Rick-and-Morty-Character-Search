@@ -5,6 +5,7 @@ const gender = document.getElementById("gender");
 const fullname = document.getElementById("fullname");
 const species = document.getElementById("species");
 const characterStatus = document.getElementById("status");
+const characterInfo = document.getElementById("card");
 
 async function fetchData (){
 
@@ -21,7 +22,7 @@ async function fetchData (){
         
         image.src = data.results[0].image;
         image.style = "block";
-        console.log(data.results)
+        characterInfo.style = "block";
         gender.textContent = "Gender: " + data.results[0].gender;
         fullname.textContent = "Full Name: " + data.results[0].name;
         species.textContent = "Species: " + data.results[0].species;
@@ -34,6 +35,4 @@ async function fetchData (){
 
 button.addEventListener('click', () => {
     fetchData();
-    
-    
 });

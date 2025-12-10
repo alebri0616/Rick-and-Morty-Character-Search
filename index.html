@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Document</title>
+   <link rel="stylesheet" href="/style.css">
+    <title>Rick and Morty</title>
 </head>
 <body>
-    <h3>
-        Search info about Rick and Morty characters!
-    </h3>
+    <div class="searchContainer">
+    <h1>
+        HERE YOU CAN SEARCH INFORMATION ABOUT ANY RICK AND MORTY CHARACTER!
+    </h1>
+    
     <input type="text" placeholder="Ex:Rick" id="character">
     <button>Search</button><br>
-    <div>
-    <img src="" alt="rickandmortycha" style="display: none;">
+    </div>
+
+    <div id="card" style="display: none;">
+    <img src="" alt="rickandmortycharacter" style="display: none;">
+    <div class="information">
     <p id="gender">
 
     </p>
@@ -27,7 +32,7 @@
         
     </p>
     </div>
-
+    </div>
      <script src="/script.js"></script>
 </body>
 </html>

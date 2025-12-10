@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:url('/rickandmorty.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@font-face {
+    font-family: 'GetSchwifty';
+    src: url('./fonts/get_schwifty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Orbitron';
+    src: url('fonts/Orbitron-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+}
+
+#card{
+    font-family: 'Orbitron';
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: start;
+    justify-content: space-between;
+    width: 30%;
+    border: 1px gray solid;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 7px 20px 0px #000000;
+}
+
+.searchContainer{
+    font-family: 'Orbitron';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+border-bottom: solid gray 1px;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+button{
+    font-family: 'Orbitron';
+    padding: 8px;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: solid darkgreen 3px;
+    width: 8rem;
+    background-color: rgb(36, 114, 15);
+    color: rgb(217, 217, 158);
+    box-shadow: 0px 7px 20px 0px #000000;
+}
+input{
+    font-family: 'Orbitron';
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0px 7px 20px 0px #000000;
+}
+h1{
+    background-color: rgb(36, 114, 15);
+    color: rgb(217, 217, 158);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem ;
+    padding: 1rem;
+    border: solid 1px black;
+    border-radius: 1rem;
+    font-family: 'GetSchwifty', sans-serif;
+    box-shadow: 0px 7px 100px 0px #000000;
+}
+h3{
+    display: flex;
+    margin: 1rem;
+
+}
+.information{
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+@media (max-width: 600px){
+#card{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-between;
+    width: 50%;
+    border: 1px gray solid;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 9px 20px 0px #a7a2a2;
+}
+
+.searchContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+border-bottom: solid gray 1px;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+button{
+    padding: 8px;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: solid darkgreen 3px;
+    width: 8rem;
+    background-color: rgb(36, 114, 15);
+    color: rgb(217, 217, 158);
+}
+input{
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: 'GetSchwifty', sans-serif;
+}
+h3{
+    font-size: 80%;
+    margin: 1;
+}
+
+
+}
